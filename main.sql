@@ -1,11 +1,14 @@
 -- create a table
 CREATE TABLE students (
   id INTEGER PRIMARY KEY,
-  name TEXT NOT NULL,
-  gender TEXT NOT NULL
+  name VARCHAR(20) NOT NULL,
+  major VARCHAR(20) NULL
 );
 -- insert some values
-INSERT INTO students VALUES (1, 'Ryan', 'M');
-INSERT INTO students VALUES (2, 'Joanna', 'F');
+INSERT INTO students VALUES (1, 'Jack', 'Biology');
+INSERT INTO students VALUES (2, 'Kate', 'Sociology');
+INSERT INTO students VALUES (3, 'NULL', 'Chemistry');
+INSERT INTO students VALUES (4, 'Ryan', 'Economics');
+INSERT INTO students VALUES (5, 'Mike', 'Computer Science');
 -- fetch some values
-SELECT * FROM students WHERE gender = 'F';
+SELECT * FROM students;
