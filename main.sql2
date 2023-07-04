@@ -1,16 +1,15 @@
--- create a table
 CREATE TABLE people (
   id INTEGER PRIMARY KEY,
   name VARCHAR(20) NOT NULL,
   age VARCHAR(20) NULL
 );
--- insert some values
+
 INSERT INTO people VALUES (1, 'John', '15');
 INSERT INTO people VALUES (2, 'Megan', '22');
 INSERT INTO people VALUES (3, 'Kate', '26');
 INSERT INTO people VALUES (4, 'Bryan', '32');
 INSERT INTO people VALUES (5, 'Tyler', '42');
--- fetch some values
+
 SELECT people.name, people.age
 FROM people
 ORDER BY name;
