@@ -1,16 +1,16 @@
 -- create a table
-CREATE TABLE students (
+CREATE TABLE people (
   id INTEGER PRIMARY KEY,
   name VARCHAR(20) NOT NULL,
-  major VARCHAR(20) NULL
+  age VARCHAR(20) NULL
 );
 -- insert some values
-INSERT INTO students VALUES (1, 'Jack', 'Biology');
-INSERT INTO students VALUES (2, 'Kate', 'Sociology');
-INSERT INTO students VALUES (3, 'Claire', 'Chemistry');
-INSERT INTO students VALUES (4, 'Ryan', 'Economics');
-INSERT INTO students VALUES (5, 'Mike', 'Computer Science');
+INSERT INTO people VALUES (1, 'John', '15');
+INSERT INTO people VALUES (2, 'Megan', '22');
+INSERT INTO people VALUES (3, 'Kate', '26');
+INSERT INTO people VALUES (4, 'Bryan', '32');
+INSERT INTO people VALUES (5, 'Tyler', '42');
 -- fetch some values
-SELECT students.name, students.major
-FROM students
+SELECT people.name, people.age
+FROM people
 ORDER BY name;
